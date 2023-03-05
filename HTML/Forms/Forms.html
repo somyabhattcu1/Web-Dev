@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <title>Forms</title>
+
+
+</head>
+
+
+
+
+
+
+<body>
+
+    <h1>Forms Demo</h1>
+
+    <form action="/demo.html">
+
+
+
+        <p>
+            <label for="username">Enter the username</label>
+            <input type="text" placeholder="Username" id="username" name="q">
+        </p>
+
+
+
+        <p>
+            <label for="password">Enter the password</label>
+            <input type="password" placeholder="password" id="password">
+        </p>
+
+        <!-- this button wont submit the form b/c of the type attribute -->
+        <button type="button">regural button (wont submit)</button>
+
+
+        <!-- this button submits the from  -->
+        <button>Submit!!!</button>
+
+
+        <!-- so do this button also  -->
+        <input type="submit" value="Click Me!">
+
+    </form>
+
+    <hr>
+
+    <!-- outside the form  -->
+    <button>Not inside the form</button>
+
+
+    <!-- Lets play  -->
+    <h2>Search Reddit</h2>
+    <form action="http://www.reddit.com/search">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+
+
+    <h2>Search Google</h2>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+
+
+    <h2>More Inputs</h2>
+
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to everything</label>
+
+
+        <p>
+            <label for="xs">1</label>
+            <input type="radio" name="query" id="xs" value="lol1">
+        </p>
+
+        <p>
+            <label for="xq">2</label>
+            <input type="radio" name="query" id="xq" value="lol2">
+
+        </p>
+
+        <p>
+            <label for="xr">3</label>
+            <input type="radio" name="query" id="xr" value="'lol3">
+        </p>
+
+        <p>
+
+
+            <label for="meal">Please Select an Entree</label>
+            <select name="meal" id="meal">
+
+
+                <!-- <option value="">Choose an meal</option> -->
+                <option value="Butter">Butter</option>
+
+                <option value="Paneer">Paneer</option>
+
+                <option value="Coffee">Coffee</option>
+
+                <option value="Tea">Tea</option>
+            </select>
+
+
+        </p>
+
+
+
+        <p>
+            <label for="id">Volume</label>
+            <input type="range" id="id" min="0" max="10" name="Chese_Label" step="7">
+        </p>
+
+
+        <p>
+            <label for="id2">Any special request</label>
+            <br>
+            <textarea id="id2"></textarea>
+        </p>
+
+        <button>Submit</button>
+    </form>
+
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <p>
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required>
+        </p>
+        <p>
+            <label for="sec">Enter Second Name</label>
+            <input type="text" name="sec" id="sec" minlength="5">
+        </p>
+        <button>Submit</button>
+
+    </form>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
